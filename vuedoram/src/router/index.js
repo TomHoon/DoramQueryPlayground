@@ -6,6 +6,10 @@ import About from "../views/AboutPage.vue";
 import BoardDetail from "../views/BoardDetail.vue";
 import UserList from "../views/UserList.vue";
 import PostList from "../views/PostList.vue";
+import UserWithTotalComments from "../views/UserWithTotalComments.vue";
+import UsernameContentGetLikes from "../views/UsernameContentGetLikes.vue";
+import UsersPostsGetComments from "../views/UsersPostsGetComments.vue";
+import PostWithoutComments from "../views/PostWithoutComments.vue";
 
 // Define routes
 const routes = [
@@ -13,6 +17,14 @@ const routes = [
   {path: "/detail", name: "BoardDetail", component: BoardDetail},
   {path: "/users", name: "UserList", component: UserList},
   {path: "/posts", name: "PostList", component: PostList},
+  {path: "/userWithTotalComments", name: "UserWithTotalComments", component: UserWithTotalComments},
+  {path: "/usersPostsGetComments", name: "UsersPostsGetComments", component: UsersPostsGetComments},
+  {path: "/PostWithoutComments", name: "PostWithoutComments", component: PostWithoutComments},
+  {
+    path: "/usernameContentGetLikes",
+    name: "UsernameContentGetLikes",
+    component: UsernameContentGetLikes,
+  },
 ];
 
 // Create router
